@@ -3,6 +3,12 @@ export const portfolioCategories = ["All","Next","React", "Vanilla JS", "Tailwin
 // Add the live URL (or GitHub repo link) for each project in the `link` field.
 // Leave it as "#" if you don't have a live link yet.
 export const portfolioItems = [
+      {
+    title: "smghai",
+    category: "Next",
+    image: "باشگاه-مشتریان-خانه-06-30-2026_10_36_AM.png",
+    link: "https://smghai.ir/",
+  },
     {
     title: "nosha pizza",
     category: "Next",
