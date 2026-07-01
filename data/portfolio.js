@@ -9,12 +9,12 @@ export const portfolioItems = [
     image: "باشگاه-مشتریان-خانه-06-30-2026_10_36_AM.png",
     link: "https://smghai.ir/",
   },
-    {
-    title: "nosha pizza",
-    category: "Next",
-    image: "پیتزا-نوشا-05-12-2025_04_19_PM.png",
-    link: "https://final-project-h2se.vercel.app/",
-  },
+  //   {
+  //   title: "nosha pizza",
+  //   category: "Next",
+  //   image: "پیتزا-نوشا-05-12-2025_04_19_PM.png",
+  //   link: "https://final-project-h2se.vercel.app/",
+  // },
       {
     title: "task manager",
     category: "Next",
