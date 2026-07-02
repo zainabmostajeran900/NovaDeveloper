@@ -16,12 +16,49 @@ body {
   color: #0a0a0a;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
   }
-  * {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
+
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent to-accent-dark bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 1.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes pulse-soft {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  .animate-pulse-soft {
+    animation: pulse-soft 2s ease-in-out infinite;
   }
 }
